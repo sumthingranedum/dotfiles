@@ -16,7 +16,7 @@ rustup
 rustup default stable
 makepkg -si
 
-paru -S neofetch hyprland wl-clipboard kitty firefox ttc-iosevka hyprpaper xdg-user-dirs virt-manager qemu-full dnsmasq
+paru -S neofetch hyprland wl-clipboard kitty firefox ttc-iosevka hyprpaper xdg-user-dirs virt-manager qemu-full dnsmasq nwg-look-bin
 
 sudo systemctl enable libvirtd.socket
 sudo systemctl start libvirtd.socket
