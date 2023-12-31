@@ -24,3 +24,7 @@ sudo systemctl start libvirtd.socket
 sudo virsh net-autostart default
 
 sudo usermod -aG libvirt zack
+
+firefox
+about:config
+ui.key.menuAccessKeyFocuses = false
