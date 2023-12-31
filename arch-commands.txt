@@ -28,3 +28,4 @@ sudo usermod -aG libvirt zack
 firefox
 about:config
 ui.key.menuAccessKeyFocuses = false
+remove bloat from toolbar
