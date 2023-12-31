@@ -28,4 +28,5 @@ sudo usermod -aG libvirt zack
 firefox
 about:config
 ui.key.menuAccessKeyFocuses = false
+general.autoScroll = true
 remove bloat from toolbar
