@@ -11,5 +11,12 @@ PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:/home/zack/.scripts
 
+set -o vi
+
 alias ll='ls -al'
 alias gs='git status'
+alias ..='cd ..'
+alias vim='nvim'
+alias cp='cp -i'
+alias df='df -h'
+alias free='free -h'
