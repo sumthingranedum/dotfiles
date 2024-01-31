@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo ""
+
+echo "Battery 1"
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/BAT1/status
+
+echo ""
+
+echo "Battery 2"
+cat /sys/class/power_supply/BAT2/capacity
+cat /sys/class/power_supply/BAT2/status
+
+echo ""
