@@ -15,7 +15,6 @@ set -o vi
 
 alias ll='ls -al'
 alias gs='git status'
-alias ..='cd ..'
 alias vim='nvim'
 alias cp='cp -i'
 alias df='df -h'
