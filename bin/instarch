@@ -7,16 +7,14 @@ cd paru
 makepkg -si
 cd ..
 sudo rm -r paru
-paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look polkit-kde-agent tldr github-cli arc-gtk-theme htop man-db
+paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look polkit-kde-agent tldr github-cli arc-gtk-theme htop man-db sway swaybg wofi
 xdg-user-dirs-update
 git config --global user.name "Zack Waterman"
 git config --global user.email "zackgwaterman@gmail.com"
 git config --global init.defaultBranch main
 gh auth login
 cd
-git clone https://github.com/zackwaterman/dotfiles
-mv scripts .scripts
-mv dotfiles .dotfiles
+ln -s ~/.dotfiles/sway ~/.config
 ln -s ~/.dotfiles/hypr ~/.config
 ln -s ~/.dotfiles/foot ~/.config
 ln -s ~/.dotfiles/nvim ~/.config
