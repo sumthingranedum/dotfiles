@@ -65,7 +65,7 @@ input "1118:2479:Microsoft_Surface_045E:09AF_Touchpad" {
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
