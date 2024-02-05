@@ -7,7 +7,7 @@ cd paru
 makepkg -si
 cd ..
 sudo rm -r paru
-paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db sway swaybg wofi playerctl stow tree thorium-browser-bin vlc
+paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db sway swaybg wofi playerctl stow tree thorium-browser-bin vlc qt5-wayland qt6-wayland
 xdg-user-dirs-update
 git config --global user.name "Zack Waterman"
 git config --global user.email "zackgwaterman@gmail.com"
