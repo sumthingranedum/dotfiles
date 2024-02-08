@@ -87,8 +87,8 @@ input "1118:2479:Microsoft_Surface_045E:09AF_Touchpad" {
     bindsym XF86AudioPause exec playerctl play-pause
 
     # Brightness
-    bindsym XF86MonBrightnessUp exec brightnessctl set +10%
-    bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
