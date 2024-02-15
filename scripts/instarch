@@ -1,4 +1,4 @@
-paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db wofi playerctl stow tree vlc qt5-wayland qt6-wayland brightnessctl wget zsh zoxide fzf
+paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db wofi playerctl stow tree vlc qt5-wayland qt6-wayland brightnessctl wget zsh zsh-autosuggestions zsh-syntax-highlighting zoxide fzf
 # Choices
 #   paru -S sway swaybg 
 paru -S hyprland
@@ -17,3 +17,4 @@ echo -e "\n[linux-surface]\nServer = https://pkg.surfacelinux.com/arch/" | sudo 
 paru
 paru -S linux-surface linux-surface-headers iptsd libwacom-surface
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+chsh -s /bin/zsh
