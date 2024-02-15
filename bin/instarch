@@ -1,24 +1,9 @@
 #!/bin/bash
 
-sudo pacman -S rustup
-rustup default stable
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-cd ..
-sudo rm -r paru
-paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db sway swaybg wofi playerctl stow tree thorium-browser-bin vlc qt5-wayland qt6-wayland brightnessctl wget
-xdg-user-dirs-update
+paru -S neofetch wl-clipboard foot ttf-iosevka-nerd xdg-user-dirs nwg-look tldr github-cli arc-gtk-theme htop man-db sway swaybg wofi playerctl stow tree thorium-browser-bin vlc qt5-wayland qt6-wayland brightnessctl wget zsh
 git config --global user.name "Zack Waterman"
 git config --global user.email "zackgwaterman@gmail.com"
 git config --global init.defaultBranch main
-gh auth login
-rm ~/.bashrc
-cd ~/.dotfiles
-stow .
-mkdir ~/Pictures/wallpapers
-cd
-nwg-look -a
 
 # Surface
 curl -s https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc \
