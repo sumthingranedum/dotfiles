@@ -1,9 +1,0 @@
-{
-    "layer": "top",
-    "position": "top",
-    "height": 32,
-    "spacing": 4, // Gaps between modules (4px)
-    "modules-left": [""],
-    "modules-center": [""],
-    "modules-right": [""],
-}
