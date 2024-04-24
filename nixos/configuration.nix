@@ -87,7 +87,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
-    #  thunderbird
     ];
   };
 
@@ -99,6 +98,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
+    neofetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
