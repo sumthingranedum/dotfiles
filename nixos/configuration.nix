@@ -7,22 +7,17 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix
+      ./hardware-configuration.nix
     ];
 
   # Bootloader.
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";  # Specify the disk where GRUB should be installed
-    efiSupport = true;  # Enable EFI support if your system uses UEFI
-  };
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  # Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -52,9 +47,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  # Enable the GNOME Desktop Environment.
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -91,7 +86,8 @@
     description = "Zack Waterman";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      
+      firefox
+    #  thunderbird
     ];
   };
 
@@ -102,11 +98,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     neovim
-    firefox
     git
-    gcc
-    unzip
-    gh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
