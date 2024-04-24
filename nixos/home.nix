@@ -68,7 +68,26 @@
   #  /etc/profiles/per-user/zack/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
+  };
+
+  # Programs
+  programs = {
+
+    bash = {
+      enable = true;
+      shellAliases = {
+        ll = "ls -l";
+        gs = "git status";
+      };
+    };
+
+    git = {
+      enable = true;
+      userName = "Zack Waterman";
+      userEmail = "zack.waterman@watermancs.com";
+    };
+
   };
 
   # Let Home Manager install and manage itself.
