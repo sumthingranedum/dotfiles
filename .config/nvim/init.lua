@@ -37,7 +37,8 @@ vim.opt.timeoutlen = 300
 vim.opt.scrolloff = 10
 
 -- Yank to clipboard
-vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>y", '"+y')
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
