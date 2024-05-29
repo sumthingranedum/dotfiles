@@ -13,6 +13,9 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Disable mouse
+vim.opt.mouse = ""
+
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -386,6 +389,7 @@ require("lazy").setup({
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
 				"clangd",
+				"pyright",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
