@@ -1,3 +1,4 @@
 [Default Applications]
 image/webp=imv.desktop
 video/mp4=mpv.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
