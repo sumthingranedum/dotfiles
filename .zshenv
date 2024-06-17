@@ -8,7 +8,7 @@ export BROWSER="firefox"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # PATH
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:~/.local/bin:~/.cargo/bin"
 
 # zsh config
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
