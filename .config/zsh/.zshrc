@@ -7,8 +7,9 @@ fi
 
 #########################
 
-# PATH
-export PATH=$PATH:/home/zack/.local/bin
+bindkey -v
+bindkey "^?" backward-delete-char
+bindkey "^[[3~" delete-char
 
 # aliases
 alias gs="git status"
