@@ -8,7 +8,7 @@ export BROWSER="firefox"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # PATH
-export PATH="$PATH:~/.local/bin:~/.cargo/bin"
+export PATH="$PATH:/home/zack/.local/bin:/home/zack/.cargo/bin"
 
 # zsh config
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -19,3 +19,4 @@ export _ZO_DATA_DIR="$XDG_CONFIG_HOME/zoxide"
 # manpager
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+. "$HOME/.cargo/env"
