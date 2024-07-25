@@ -1,5 +1,5 @@
 {
   "catppuccin": { "branch": "main", "commit": "07f1ee861394c163d1f1d3e1926eb309e0c81027" },
   "lazy.nvim": { "branch": "main", "commit": "4496b4cad69a862199bb3ad452d3c4988bb925a1" },
-  "nvim-treesitter": { "branch": "master", "commit": "96c5cb23342db3e51994680781da54b45d7e0c9b" }
+  "nvim-treesitter": { "branch": "master", "commit": "63be47f203d3e9174fdac3872fb9766e5bcc5a11" }
 }
