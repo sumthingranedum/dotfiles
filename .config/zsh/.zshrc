@@ -12,6 +12,7 @@ bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
 
 # aliases
+alias ls="ls --color=auto"
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add"

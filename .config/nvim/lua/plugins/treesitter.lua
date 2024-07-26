@@ -7,8 +7,8 @@ return {
       configs.setup({
           ensure_installed = { "c", "lua", "python", "rust" },
           sync_install = false,
+	  auto_install = true,
           highlight = { enable = true },
-          indent = { enable = true },  
         })
     end,
 }

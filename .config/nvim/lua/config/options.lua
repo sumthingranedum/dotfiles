@@ -21,3 +21,6 @@ vim.opt.hlsearch = true
 
 -- Transparent background
 vim.cmd('highlight Normal guibg=none ctermbg=none')
+
+-- Use treesitter indent instead
+vim.opt.smartindent = false
