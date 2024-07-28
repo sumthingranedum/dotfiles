@@ -30,6 +30,9 @@ zmodload zsh/complist
 _comp_options+=(globdots)
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
