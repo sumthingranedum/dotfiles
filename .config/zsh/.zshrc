@@ -12,6 +12,7 @@ bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
 
 # aliases
+alias ls="ls --color=auto"
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add"
@@ -30,6 +31,9 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 _comp_options+=(globdots)
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
