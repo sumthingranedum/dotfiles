@@ -16,6 +16,7 @@ set $browser firefox
 # on the original workspace that the command was run on.
 set $drun tofi-drun | xargs swaymsg exec --
 
+# Remove titlebars
 default_border pixel 1
 
 ### Autostart
@@ -79,6 +80,13 @@ exec foot --server
 
     # Start your browser
     bindsym $mod+w exec $browser
+
+    # Multimedia keybinds
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
+    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ 5%-
+    bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
