@@ -27,3 +27,6 @@ vim.keymap.set("v", "<leader>p", [["_dP]])
 
 -- Wow (search and replace word under cursor)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- File explorer
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex)

@@ -23,6 +23,15 @@ default_border pixel 1
 exec_always autotiling
 exec foot --server
 
+### Colors
+# target                 title     bg    text   indicator  border
+client.focused           $blue     $blue $blue  $blue      $blue
+client.focused_inactive  $base     $base $text  $overlay0  $overlay0
+client.unfocused         $base     $base $text  $overlay0  $overlay0
+client.urgent            $base     $base $text  $overlay0  $overlay0
+client.placeholder       $base     $base $text  $overlay0  $overlay0
+client.background        $base     
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -225,9 +234,15 @@ bar {
     status_command while sway-status; do sleep 60; done
 
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        background         $base
+        statusline         $text
+        focused_statusline $text
+        focused_separator  $base
+        focused_workspace  $base $base $green
+        active_workspace   $base $base $blue
+        inactive_workspace $base $base $surface1
+        urgent_workspace   $base $base $surface1
+        binding_mode       $base $base $surface1
     }
 }
 
