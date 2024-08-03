@@ -39,6 +39,7 @@ require('mason-lspconfig').setup({
     "clangd",
     "gopls",
     "rust_analyzer",
+    "pyright",
   },
   handlers = {
     default_setup,
