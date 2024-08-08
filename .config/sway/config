@@ -248,6 +248,8 @@ bar {
         urgent_workspace   $base $base $surface1
         binding_mode       $base $base $surface1
     }
+
+    font font=JetBrainsMonoNerdFontMono
 }
 
 include /etc/sway/config.d/*
