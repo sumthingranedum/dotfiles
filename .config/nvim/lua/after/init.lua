@@ -1,5 +1,0 @@
-require("after.colorscheme")
-require("after.telescope")
-require("after.undotree")
-require("after.treesitter")
-require("after.lsp")
