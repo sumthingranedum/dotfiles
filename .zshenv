@@ -19,7 +19,6 @@ export _ZO_DATA_DIR="$XDG_CONFIG_HOME/zoxide"
 # manpager
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
-. "$HOME/.cargo/env"
 
 # Remove escape delay for vi mode
 export KEYTIMEOUT=1
