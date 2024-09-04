@@ -26,6 +26,9 @@ function yy() {
 
 # aliases
 alias ls="ls --color=auto"
+alias dstart="sudo systemctl start"
+alias denable="sudo systemctl enable"
+alias dstop="sudo systemctl stop"
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add"

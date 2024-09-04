@@ -60,3 +60,5 @@ cmp.setup({
     end,
   },
 })
+
+require'lspconfig'.gdscript.setup{}
