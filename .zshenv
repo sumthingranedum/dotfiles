@@ -22,5 +22,3 @@ export MANWIDTH=999
 
 # Remove escape delay for vi mode
 export KEYTIMEOUT=1
-
-export WAYLAND_DISPLAY=wayland-0
