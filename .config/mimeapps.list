@@ -1,7 +1,0 @@
-[Default Applications]
-image/webp=imv.desktop
-image/png=imv.desktop
-image/jpeg=imv.desktop
-video/mp4=mpv.desktop
-audio/flac=mpv.desktop
-x-scheme-handler/everest=/home/zack/.local/share/applications/Olympus.desktop
