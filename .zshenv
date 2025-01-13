@@ -17,8 +17,11 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export _ZO_DATA_DIR="$XDG_CONFIG_HOME/zoxide"
 
 # manpager
-export MANPAGER='nvim +Man!'
+export MANPAGER="nvim +Man!"
 export MANWIDTH=999
 
 # Remove escape delay for vi mode
 export KEYTIMEOUT=1
+
+# VR
+export VK_DRIVER_FILES="/usr/share/vulkan/icd.d/nvidia_icd.json"
